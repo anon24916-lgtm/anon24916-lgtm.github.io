@@ -5,3 +5,4 @@ static/
 *.webm
 *.wav
 *.gif
+node_modules/

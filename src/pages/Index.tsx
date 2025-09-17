@@ -24,7 +24,7 @@ const Index = () => {
   ];
 
   // Speech+Gesture demos
-  const textToSpeechGestureItems = [
+  const textToSpeechGestureFiles = [
     'media/tts_gesture/gelina_female_random0001-0470.mp4',
     'media/tts_gesture/duck_female_random0001-0580.mp4',
     'media/tts_gesture/kings_cfm_cloning0001-0467.mp4'
@@ -48,6 +48,7 @@ const Index = () => {
   const multimodalCloningItems = createItemsFromPaths(cloneFiles);
   const comparisonItems = createItemsFromPaths(sotaFiles);
   const failureItems = createItemsFromPaths(failureFiles);
+  const textToSpeechGestureItems = createItemsFromPaths(textToSpeechGestureFiles)
 
   return (
     <div className="min-h-screen bg-background">
