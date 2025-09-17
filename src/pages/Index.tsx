@@ -7,7 +7,7 @@ const Index = () => {
 
   const cloneFiles = [
     'media/cloning/clone_scott_0_2_2-seg-10001-0467.mp4',
-    'media/cloning/clone_kieks_0_3_3-seg-20001-0535.mp4',
+    'media/cloning/clone_kieks_0_3_3-seg-20001-0602.mp4',
     'media/cloning/clone_scott_0_4_4-seg-00001-0535.mp4'
   ];
 
