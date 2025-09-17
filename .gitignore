@@ -1,0 +1,7 @@
+public/media/
+static/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.gif
