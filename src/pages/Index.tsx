@@ -6,9 +6,9 @@ const Index = () => {
   const BASE = import.meta.env.BASE_URL || '/';
 
   const cloneFiles = [
-    'media/cloning/clone_kieks_0_3_3-seg-20001-0535.mov',
-    'media/cloning/clone_scott_0_2_2-seg-10001-0467.mov',
-    'media/cloning/clone_scott_0_4_4-seg-00001-0535.mov'
+    'media/cloning/clone_scott_0_2_2-seg-10001-0467.mp4',
+    'media/cloning/clone_kieks_0_3_3-seg-20001-0535.mp4',
+    'media/cloning/clone_scott_0_4_4-seg-00001-0535.mp4'
   ];
 
   const sotaFiles = [
@@ -25,27 +25,9 @@ const Index = () => {
 
   // Speech+Gesture demos
   const textToSpeechGestureItems = [
-    {
-      id: 'ttsg-01',
-      title: 'gelina_female',
-      description: '',
-      videoSrc: `${BASE}media/tts_gesture/gelina_female_random0001-0470.mp4`,
-      posterSrc: '/placeholder.svg'
-    },
-    {
-      id: 'ttsg-02',
-      title: 'duck_female',
-      description: '',
-      videoSrc: `${BASE}media/tts_gesture/duck_female_random0001-0580.mp4`,
-      posterSrc: '/placeholder.svg'
-    },
-    {
-      id: 'ttsg-03',
-      title: 'kings_cfm',
-      description: '',
-      videoSrc: `${BASE}media/tts_gesture/kings_cfm_cloning0001-0467.mp4`,
-      posterSrc: '/placeholder.svg'
-    }
+    'media/tts_gesture/gelina_female_random0001-0470.mp4',
+    'media/tts_gesture/duck_female_random0001-0580.mp4',
+    'media/tts_gesture/kings_cfm_cloning0001-0467.mp4'
   ];
 
   const createItemsFromPaths = (paths: string[]) =>
