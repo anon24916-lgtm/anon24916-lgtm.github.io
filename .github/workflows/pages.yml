@@ -11,22 +11,30 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Fetch repo + LFS binaries
       - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Ensure LFS files are present
+        run: |
+          git lfs install
+          git lfs checkout
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
-      # Work around npm optional-deps bug across platforms
-      - name: Clean install (no lockfile, no cached modules)
+      # Work around rollup optional-deps cross-platform issue
+      - name: Install deps
         run: |
           rm -rf node_modules package-lock.json
           npm install --no-audit --no-fund
@@ -38,9 +46,8 @@ jobs:
         run: |
           cp dist/index.html dist/404.html
           touch dist/.nojekyll
-          
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
