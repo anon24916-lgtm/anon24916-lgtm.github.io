@@ -6,27 +6,27 @@ const Index = () => {
   const BASE = import.meta.env.BASE_URL || '/';
 
   const cloneFiles = [
-    'media/cloning/clone_scott_0_2_2-seg-10001-0467.mp4',
-    'media/cloning/clone_kieks_0_3_3-seg-20001-0602.mp4',
-    'media/cloning/clone_scott_0_4_4-seg-00001-0535.mp4'
+    'media/cloning/clone_scott_0_2_2-seg-10001-0467.mov',
+    'media/cloning/clone_kieks_0_3_3-seg-20001-0602.mov',
+    'media/cloning/clone_scott_0_4_4-seg-00001-0535.mov'
   ];
 
   const sotaFiles = [
-    'media/sota/comparison_kieks_0_1_1-seg-20001-0435.mp4',
-    'media/sota/comparison_scott_0_5_5-seg-30001-0240.mp4',
-    'media/sota/comparison_wayne_0_2_2-seg-20001-0462.mp4',
-    'media/sota/comparison_wayne_0_3_3-seg-20001-0435.mp4'
+    'media/sota/comparison_kieks_0_1_1-seg-20001-0435.mov',
+    'media/sota/comparison_scott_0_5_5-seg-30001-0240.mov',
+    'media/sota/comparison_wayne_0_2_2-seg-20001-0462.mov',
+    'media/sota/comparison_wayne_0_3_3-seg-20001-0435.mov'
   ];
 
   const failureFiles = [
-    'media/failures/FAILURE_10001-0330.mp4',
+    'media/failures/FAILURE_10001-0330.mov',
     'media/failures/Gelina_1_wayne_0_3_3-seg-3.mov'
   ];
 
   // Speech+Gesture demos
   const textToSpeechGestureFiles = [
-    'media/tts_gesture/A_gelina_female_random0001-0470.mp4',
-    'media/tts_gesture/duck_female_random0001-0580.mp4',
+    'media/tts_gesture/A_gelina_female_random0001-0470.mov',
+    'media/tts_gesture/duck_female_random0001-0580.mov',
     'media/tts_gesture/kings_cfm_cloning0001-0467.mov'
   ];
 
